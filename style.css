@@ -15,7 +15,11 @@ p {
   justify-content: space-between;
   padding: 2.5rem;
   background-color: #1d6256;
-
+}
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .logo a {
   text-decoration: none;
