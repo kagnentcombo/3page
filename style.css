@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+a {
+  font-family: "Itim", cursive;
+}
+p {
+  font-family: "Itim", cursive;
+}
+.con-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: #1d6256;
+
+}
+.logo a {
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+}
+.logo ul {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  column-gap: 5rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  padding: 7px 7rem;
+  border-radius: 2rem;
+}
+.search button {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.bar {
+  position: relative;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  background-color: #4c998c;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.bar li {
+  padding: 20px;
+}
+.bar ul {
+  list-style: none;
+}
+.bar li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.bar-img {
+  position: absolute;
+  top: 3.6rem;
+  left: 2rem;
+  row-gap: 2.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.con-body {
+  display: flex;
+  gap: 20rem;
+  background-color: #1d6256;
+}
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 5rem;
+}
+.card .item1 {
+  position: relative;
+}
+.card .item2 {
+  position: relative;
+}
+.card .item3 {
+  position: relative;
+}
+.card .item4 {
+  position: relative;
+}
+.card .item1 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card .item2 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card .item3 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card .item4 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card .item1 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item2 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item3 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item4 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.item {
+  width: 300px;
+  height: 250px;
+  background-color: #0c3d35;
+  border-radius: 2rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 10px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+.text {
+  font-size: 40px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: white;
+}
+.item p {
+  font-size: 20px;
+}
+.con-foot{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.foot ul{
+  list-style: none;
+}
+.foot li a{
+  text-decoration: none;
+}
