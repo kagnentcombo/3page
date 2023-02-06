@@ -1,23 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: 0;
+  font-family: 'Kanit', sans-serif;
 }
 body {
   height: 100vh;
 }
-a {
-  font-family: "Itim", cursive;
-}
-p {
-  font-family: "Itim", cursive;
-}
+
 .con-nav {
   display: flex;
   justify-content: space-around;
   padding: 2rem 0;
-  background-color: #4c998c;
+  background-color: #26b67a;
   opacity: 0.9;
   width: 100%;
   position: relative;
@@ -35,6 +33,11 @@ nav {
   font-size: 2.5vw;
   color: white;
   padding-left: 1rem;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.logo:hover a {
+  opacity: 1;
 }
 .logo ul {
   list-style: none;
@@ -47,6 +50,7 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 50px;
 }
 .menu li a {
   display: block;
@@ -54,10 +58,14 @@ nav {
   color: white;
   font-size: 1.2vw;
   padding: 1rem;
+  transition: 0.4s;
 }
-.menu li:hover {
-  background-color: #33655c;
+.menu li {
   border-radius: 30px;
+  transition: 0.7s;
+}
+.menu li a:hover {
+  font-size: 1.4vw;
 }
 .search {
   position: relative;
@@ -68,13 +76,14 @@ nav {
   align-items: center;
   border-radius: 60px;
   padding: 6px 20px;
-  backdrop-filter: blur(4px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
 }
 .con-search {
   padding-top: 1rem;
   padding-left: 1rem;
 }
 .search input {
+  color: white;
   background: transparent;
   flex: 1;
   border: 0;
@@ -82,21 +91,30 @@ nav {
   padding: 6px 20px;
   font-size: 14px;
   text-align: center;
+  transition: 0.4s;
 }
 ::placeholder {
   color: #c4ecd8;
 }
 .search button i {
-  width: 12px;
+  color: white;
   flex: 1;
+  opacity: 0.5;
+  transition: 0.6s;
+}
+.search button i:hover {
+  opacity: 1;
 }
 .search button {
   border: 0;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  background: #c4ecd8;
+  background: rgba(255, 255, 255, 0);
   cursor: pointer;
+}
+.search input:hover {
+  opacity: 0.5;
 }
 .nav-button {
   position: absolute;
@@ -141,7 +159,6 @@ nav {
 .sidebar {
   position: relative;
   display: inline-block;
-  background-color: #4c998c;
   opacity: 0.6;
   width: 340px;
   height: 730px;
@@ -152,6 +169,10 @@ nav {
   padding: 2rem 0;
   cursor: pointer;
   width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0.6;
 }
 .barbox a {
   text-decoration: none;
@@ -175,36 +196,9 @@ nav {
 .bb6 a {
   padding: 2rem 7.1rem;
 }
-
-.bb1:hover {
-  background-image: url(https://images.pexels.com/photos/4321802/pexels-photo-4321802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: right 30% bottom 50%;
-  font-size: 25px;
-}
-.bb2:hover {
-  background-image: url(https://images.pexels.com/photos/2387876/pexels-photo-2387876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: right 70% bottom 90%;
-  font-size: 25px;
-}
-.bb3:hover {
-  background-image: url(https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-size: cover;
-  font-size: 25px;
-}
-.bb4:hover {
-  background-image: url(https://images.pexels.com/photos/3601450/pexels-photo-3601450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: right 70% bottom 47%;
-  font-size: 25px;
-}
-.bb5:hover {
-  background-image: url(https://images.pexels.com/photos/2438/nature-forest-waves-trees.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: left 50% bottom 60%;
-  font-size: 25px;
-}
-.bb6:hover {
-  background-image: url(https://images.pexels.com/photos/12681169/pexels-photo-12681169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: right 30% bottom 8%;
-  font-size: 25px;
+.barbox:hover {
+  font-size: 20px;
+  opacity: 1;
 }
 .con-body {
   display: flex;
@@ -227,16 +221,7 @@ nav {
   width: 250px;
   height: 180px;
 }
-.card .item1 img {
-  border-radius: 20px;
-}
-.card .item2 img {
-  border-radius: 20px;
-}
-.card .item3 img {
-  border-radius: 20px;
-}
-.card .item4 img {
+.card img {
   border-radius: 20px;
 }
 .item {
@@ -255,20 +240,20 @@ nav {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+  transition: 0.5s;
 }
-.item .content{
-  transition: .5s;
+.item .content {
+  transition: 0.5s;
   opacity: 0.6;
 }
-.item:hover .content{
-  
+.item:hover .content {
   opacity: 1;
 }
-.item:hover{
+.item:hover {
   transform: translateY(-10px);
   cursor: pointer;
 }
-.item .content p{
+.item .content p {
   font-size: 20px;
 }
 .text {
@@ -285,11 +270,12 @@ nav {
 .con-foot {
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding: 10px 0;
   width: 100%;
 }
 .foot ul {
   list-style: none;
+
 }
 .foot li a {
   text-decoration: none;
